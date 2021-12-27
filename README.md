@@ -12,7 +12,7 @@ yarn add react-card-number
 ```
 Usage
 ```
-import CreditCardInput from 'react-credit-card-input';
+import {Card} from 'react-card-number';
  
 <Card
         title="title"
@@ -27,7 +27,7 @@ import CreditCardInput from 'react-credit-card-input';
           inputStyles:{}
         }}
         maxLength={19}
-        splitter="_"
+        splitter="_" />
 ```
 
 Contributing
