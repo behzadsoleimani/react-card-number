@@ -1,0 +1,45 @@
+{
+  "name": "react-card-number",
+  "version": "1.0.3",
+  "description": "A debit card input field for React",
+  "keywords": [
+    "React",
+    "Currency",
+    "Credit"
+  ],
+  "author": "behzad soleimani <behzadsoleimani97@gmail.com>",
+  "homepage": "https://behzadsoleimani.ir",
+  "license": "SEE LICENSE IN License.lic",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "build": "dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/behzadsoleimani/react-card-number.git"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "prePublishOnly": "npm run build",
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint . --ignore-path ../../.eslintignore --ext ts --ext tsx --ext js --ext jsx",
+    "lint:fix": "eslint --fix . --ignore-path ../../.eslintignore --ext ts --ext tsx --ext js --ext jsx"
+  },
+  "bugs": {
+    "url": "https://github.com/behzadsoleimani/react-card-number/issues"
+  },
+  "peerDependencies": {
+    "react": "^0.14.9 || ^15.3.0 || ^16.0.0-rc || ^16.0",
+    "react-dom": "^0.14.9 || ^15.3.0 || ^16.0.0-rc || ^16.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3"
+  }
+}
